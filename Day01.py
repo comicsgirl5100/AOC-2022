@@ -1,6 +1,6 @@
-#2022 Advent of Code Challenges
+# 2022 Advent of Code Challenges
 
-#Day 1 Part 1
+# Day 1 Part 1
 with open("input_files/day01.txt", "r") as f:
     data = f.read().split("\n")
 
@@ -15,12 +15,8 @@ with open("input_files/day01.txt", "r") as f:
             cals = 0
 
     print(max(totalCals))
-#Day 1 Part 2
+# Day 1 Part 2
     totalCals.sort(reverse = True)
     topCals = totalCals[:3]
     total = sum(topCals)
     print(total)
-
-
-
-
