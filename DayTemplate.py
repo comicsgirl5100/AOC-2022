@@ -1,7 +1,8 @@
 import utils
 
 day = "00"
-testSolution = 0
+test1Solution = 0
+test2Solution = 0
 
 
 def part1(input):
@@ -15,11 +16,18 @@ def part2(input):
 if __name__ == "__main__":
     try:
         testData = utils.readTestData(day)
-        testAnswer = part1(testData)
-        if testAnswer == testSolution:
-            print("Test pass")
+        test1Answer = part1(testData)
+        if test1Answer == test1Solution:
+            print("Test 1 pass")
         else:
-            print(f"got {testAnswer}, but expected {testSolution}")
+            print(f"got {test1Answer}, but expected {test1Solution}")
+
+        test2Answer = part2(testData)
+        if test2Answer == test2Solution:
+            print("Test 2 pass")
+        else:
+            print(f"got {test2Answer}, but expected {test2Solution}")
+
 
     except FileNotFoundError:
         print("No test data")
