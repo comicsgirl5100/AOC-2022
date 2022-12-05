@@ -3,7 +3,7 @@
 # Day 3 Part 1
 with open("input_files/day03.txt", "r") as f:
     sackList = f.read().split("\n")
-#    print(data)
+    print(sackList)
 
 sackTest = [
     "vJrwpWtwJgWrhcsFMMfFFhFp",
